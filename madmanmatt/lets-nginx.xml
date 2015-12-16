@@ -37,11 +37,6 @@
     </Variable>
   </Environment>    
   <Data>
-    <Volume>
-      <HostDir>path for config</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>  
-    </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <Banner>https://raw.githubusercontent.com/madmanmatt/docker-templates/master/madmanmatt/images/nginx-banner.png</Banner>
