@@ -38,9 +38,6 @@
   </Environment>    
   <Data>
     <Volume>
-      <HostDir>path to config</HostDir>
-      <ContainerDir>/etc</ContainerDir>
-      <Mode>rw</Mode>
     </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
