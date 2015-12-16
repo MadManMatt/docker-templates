@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<Beta>False</Beta>
+<Category>Downloaders:</Category>
+  <Name>madmanmatt-lets-nginx</Name>
+  <Description>
+  	Description
+  </Description>
+  <Overview>
+  	Overview
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=38055.0</Support>
+  <Registry>https://registry.hub.docker.com/u/madmanmatt/arch-sabnzbdvpn/</Registry>
+  <GitHub>https://github.com/madmanmatt/lets-nginx</GitHub>
+  <Repository>madmanmatt/lets-nginx</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>80</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>443/HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>STAGING</Name>
+      <Value>1</Value>
+    </Variable>
+  </Environment>    
+  <Data>
+    <Volume>
+      <HostDir>path to config</HostDir>
+      <ContainerDir>/etc</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <Banner>https://raw.githubusercontent.com/madmanmatt/docker-templates/master/madmanmatt/images/nginx-banner.png</Banner>
+  <Icon>https://raw.githubusercontent.com/madmanmatt/docker-templates/master/madmanmatt/images/nginx-icon.png</Icon>
+</Containers>
