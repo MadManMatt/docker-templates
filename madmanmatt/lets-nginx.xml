@@ -24,7 +24,7 @@
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort>443/HostPort>
+        <HostPort>443</HostPort>
         <ContainerPort>443</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
