@@ -39,7 +39,7 @@
   <Data>
     <Volume>
       <HostDir>path for config</HostDir>
-      <ContainerDir>/etc</ContainerDir>
+      <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>  
     </Volume>
   </Data>
