@@ -44,7 +44,7 @@
     </Volume> 
     <Volume>
       <HostDir>/mnt/user/appdata/lets-nginx/nginxconf</HostDir>
-      <ContainerDir>"/etc/nginx"</ContainerDir>
+      <ContainerDir>/etc/nginx</ContainerDir>
       <Mode>rw</Mode>
     </Volume>    
   </Data>
