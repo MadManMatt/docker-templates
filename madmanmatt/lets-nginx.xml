@@ -38,35 +38,15 @@
   </Environment>    
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/lets-nginx/sites-enabled</HostDir>
-      <ContainerDir>/etc/nginx/sites-enabled</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
       <HostDir>/mnt/user/appdata/lets-nginx/certs</HostDir>
       <ContainerDir>/etc/nginx/certs</ContainerDir>
       <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/lets-nginx/conf.d</HostDir>
-      <ContainerDir>"/etc/nginx/conf.d"</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>    
-    <Volume>
-      <HostDir>/mnt/user/appdata/lets-nginx/log</HostDir>
-      <ContainerDir>"/var/log/nginx"</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>    
+    </Volume> 
     <Volume>
       <HostDir>/mnt/user/appdata/lets-nginx/nginxconf</HostDir>
-      <ContainerDir>"/nginxconf"</ContainerDir>
+      <ContainerDir>"/etc/nginx"</ContainerDir>
       <Mode>rw</Mode>
     </Volume>    
-    <Volume>
-      <HostDir>/mnt/user/appdata/lets-nginx/letsencrypt</HostDir>
-      <ContainerDir>"/etc/letsencrypt"</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <Banner>https://raw.githubusercontent.com/madmanmatt/docker-templates/master/madmanmatt/images/nginx-banner.png</Banner>
